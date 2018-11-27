@@ -7,19 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Input/Output';
-  meetupList = [
-    {
-      name: 'Встреча друзей',
-    },
-    {
-      name: 'Конференция',
-    },
-    {
-      name: 'Благотворительный ужин',
-    },
-  ];
-
-  deleteMeetup(meetup) {
-    this.meetupList = this.meetupList.filter(m => m.name !== meetup.name);
-  }
 }

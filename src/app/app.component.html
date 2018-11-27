@@ -1,6 +1,6 @@
 <h1>Welcome to {{ title }}!</h1>
-<app-meetup 
-    *ngFor="let meetup of meetupList"  
-    [meetup]="meetup"
-    (delete)="deleteMeetup($event)"
-></app-meetup>
+<nav>
+    <a routerLink="/event/list">Список</a>
+    <a routerLink="/about">О проекте</a>
+ </nav>
+<router-outlet></router-outlet>

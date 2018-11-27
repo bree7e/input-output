@@ -1,0 +1,5 @@
+<app-meetup 
+    *ngFor="let meetup of meetupList"  
+    [meetup]="meetup"
+    (delete)="deleteMeetup($event)"
+></app-meetup>
